@@ -1,0 +1,160 @@
+/* Thème sombre pour le site de quiz */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Fond noir */
+    color: #e0e0e0; /* Texte gris clair */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1e1e1e; /* Fond sombre pour l'en-tête */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #333;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffffff; /* Blanc pour le titre principal, mais dans un fond sombre */
+}
+
+header p {
+    font-size: 1.2em;
+    color: #b0b0b0; /* Gris plus clair pour la description */
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1a1a1a; /* Fond légèrement plus clair que le body */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #ffffff;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+}
+
+.continents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.continent-btn {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.continent-btn:hover {
+    background-color: #555;
+}
+
+#quiz-section, #score-section {
+    text-align: center;
+}
+
+#question-container {
+    margin: 20px 0;
+}
+
+#options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.option-btn {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option-btn:hover {
+    background-color: #555;
+}
+
+.option-btn.correct {
+    background-color: #4caf50; /* Vert pour correct */
+}
+
+.option-btn.incorrect {
+    background-color: #f44336; /* Rouge pour incorrect */
+}
+
+#next-btn, #back-btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#next-btn:hover, #back-btn:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#scores {
+    margin-top: 20px;
+}
+
+.score-item {
+    background-color: #222;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    .continents {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .continent-btn {
+        width: 80%;
+    }
+}

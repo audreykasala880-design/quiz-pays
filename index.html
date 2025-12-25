@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz des Capitales du Monde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Quiz des Capitales du Monde</h1>
+        <p>Testez vos connaissances sur les capitales de chaque pays, organisé par continent. Apprenez en vous amusant !</p>
+        <button id="score-shortcut-btn">Voir les Scores</button>
+    </header>
+    <main>
+        <section id="continent-selection">
+            <h2>Choisissez un Continent</h2>
+            <div class="continents">
+                <button class="continent-btn" data-continent="afrique">Afrique</button>
+                <button class="continent-btn" data-continent="asie">Asie</button>
+                <button class="continent-btn" data-continent="europe">Europe</button>
+                <button class="continent-btn" data-continent="amerique-nord">Amérique du Nord</button>
+                <button class="continent-btn" data-continent="amerique-sud">Amérique du Sud</button>
+                <button class="continent-btn" data-continent="oceanie">Océanie</button>
+            </div>
+        </section>
+        <section id="quiz-section" class="hidden">
+            <h2 id="quiz-title"></h2>
+            <div id="question-container">
+                <p id="question"></p>
+                <div id="options"></div>
+            </div>
+            <button id="next-btn" class="hidden">Suivant</button>
+            <div id="result" class="hidden"></div>
+        </section>
+        <section id="score-section" class="hidden">
+            <h2>Tableau des Scores</h2>
+            <div id="scores"></div>
+            <button id="back-btn">Retour aux Continents</button>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
